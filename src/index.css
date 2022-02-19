@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(209, 247, 247);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.btn{
+  display: none;
+  text-decoration: none;
+  background-color: yellow;
+}
+.formOuterBody {
+  height: 40rem;
+  display: flex;
+  margin: 0;
+  text-align: center;
+  background-image: url("bgimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 2px 0.5px grey;
+  border-radius: 5px;
+}
+
+.formSpans {
+  margin: auto;
+  width: 50%;
+}
+
+.formHeadings {
+  font-size: 2.5rem;
+  font-weight: 550;
+}
+
+.formContent {
+  margin-top: 40px;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  background-color: rgb(159, 235, 235);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.formAnchorTags {
+  text-decoration: none;
+  color: rgb(8, 46, 170);
+}
+
+#formLine {
+  margin: auto;
+  width: 75%;
+  border: none;
+  border-top: 2px solid black;
+}
+
+#formCheckbox {
+  margin: auto 0.5rem;
+}
+
+
+/* SIGN UP PAGE STYLING */
+.signUpAreas {
+  font-size: 1.15rem;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.signUpInputFields {
+  font-size: 1.2rem;
+  padding-left: 20px;
+  margin: 5px;
+  width: 70%;
+  height: 50px;
+  border-radius: 20px;
+  background-color:rgb(233, 250, 250);
+  border-style: none;
+  box-shadow: 2px 2px 2px 0.5px grey;
+}
+
+.signUpButton {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  width: 40%;
+  height: 55px;
+  border-radius: 20px;
+  background-color: rgb(209, 247, 247);
+  transition: 0.3s;
+}
+
+.signUpTncStatement {
+  font-size: 1.3rem;
+}
+
+
+/* SIGN IN PAGE STYLING */
+.signInAreas {
+  font-size: 1.15rem;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.signInInputFields {
+  font-size: 1.2rem;
+  padding-left: 20px;
+  margin: 7px;
+  width: 70%;
+  height: 50px;
+  border-radius: 20px;
+  background-color:rgb(233, 250, 250);
+  border-style: none;
+  box-shadow: 2px 2px 2px 0.5px grey;
+}
+
+.signInButton {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0;
+  width: 40%;
+  height: 55px;
+  border-radius: 20px;
+  background-color: rgb(209, 247, 247);
+  transition: 0.3s;
+}
+
+
+/* MAKING SITE RESPONSIVE */
+@media screen and (max-width: 1150px){
+  #formGreeting{
+    display: none;
+  }
+  .formSpans{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width:1150px){
+  #formGreeting{
+    display: none;
+  }
+  .formSpans{
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:850px){
+  #formGreeting{
+    display: none;
+  }
+  .formSpans{
+    width: 580px;
+  }
+}
+
+@media screen and (max-width:600px){
+  #formGreeting{
+    display: none;
+  }
+  .formOuterBody{
+    padding: 0;
+    margin: 0;
+  }
+  .formSpans{
+    width: 100%;
+  }
+  .signUpInputFields{
+    width: 85%;
+  }
+  .signInInputFields{
+    width: 85%;
+  }
+}
